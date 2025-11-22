@@ -48,6 +48,7 @@ All admin endpoints require `X-Admin-Token: <static-token>`.
 
 The app starts on `http://localhost:8080`. Adjust defaults in `src/main/resources/application.yml`.
 
+
 ### Frontend (Umi + Ant Design Pro)
 
 A lightweight React/H5 front-end suitable for embedding in a WeChat 小程序 WebView lives under `frontend/`. It provides:
