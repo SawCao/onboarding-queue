@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: onboarding-queue
+
+app:
+  admin-token: letmein
+  weeks-ahead: 4
+  reminder-hours-before: 24
