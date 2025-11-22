@@ -48,6 +48,25 @@ All admin endpoints require `X-Admin-Token: <static-token>`.
 
 The app starts on `http://localhost:8080`. Adjust defaults in `src/main/resources/application.yml`.
 
+
+### Frontend (Umi + Ant Design Pro)
+
+A lightweight React/H5 front-end suitable for embedding in a WeChat 小程序 WebView lives under `frontend/`. It provides:
+
+- `/` — user booking form that posts `openId` / date / slot to the backend.
+- `/admin` — hidden admin surface unlocked via the static token; supports slot configuration, queue actions (叫号/过号/提醒), and stats viewing.
+
+Quick start:
+
+```bash
+cd frontend
+npm install
+npm start          # runs at http://localhost:8000 by default
+# npm run build    # outputs production assets to dist/
+```
+
+Configure the backend URL with the `BASE_URL` environment variable when deploying behind a different host.
+
 ## Universal QR code flow
 
 1. Generate a static mini program QR (or “场景码”) that launches a hidden admin/scan page in your mini program.
